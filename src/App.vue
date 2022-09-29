@@ -21,7 +21,7 @@ import WatchersExercise from "./components/WatchersExercise.vue";
   <!-- <ComputedProperties /> -->
   <!-- <ComputedExercise /> -->
   <Watchers />
-  <!-- <WatchersExercise /> -->
+  <WatchersExercise />
 </template>
 
 <style scoped>

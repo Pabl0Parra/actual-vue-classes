@@ -14,11 +14,11 @@
   <div id="exercise-2">
     <h3>Beers Tracker (0-20)</h3>
     <p>
-      The current drunkness level is <strong>{{ volume }}</strong>
+      You have drunk <strong>{{ beerCans }}</strong> beers so far.
     </p>
     <div>
-      <button @click="volume -= 1">Decrease</button>
-      <button @click="volume += 1">Increase</button>
+      <button @click="beerCans -= 1">Decrease</button>
+      <button @click="beerCans += 1">Increase</button>
     </div>
   </div>
 </template>
@@ -34,6 +34,14 @@ function changeName() {
 
 watch(name, (newValue, oldValue) => {
   console.log(`New value is ${newValue} - the old value was ${oldValue}`);
+});
+
+let beerCans = ref(0);
+
+watch(beerCans, (newValue, oldValue) => {
+  if (newValue > oldValue && newValue === 6) {
+    alert(`You starting to be drunk bro`);
+  }
 });
 </script>
 
