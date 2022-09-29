@@ -3,6 +3,8 @@ import MyBio from "./components/MyBio.vue";
 import TwoWayBinding from "./components/TwoWayBindin/TwoWayBinding.vue";
 import ComputedProperties from "./components/ComputedProperties.vue";
 import ComputedExercise from "./components/ComputedExercise.vue";
+import Watchers from "./components/Watchers.vue";
+import WatchersExercise from "./components/WatchersExercise.vue";
 </script>
 
 <template>
@@ -16,8 +18,14 @@ import ComputedExercise from "./components/ComputedExercise.vue";
     />
   </div>
   <TwoWayBinding /> -->
-  <ComputedProperties />
+  <!-- <ComputedProperties /> -->
   <!-- <ComputedExercise /> -->
+  <Watchers />
+  <!-- <WatchersExercise /> -->
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  margin: 10px 0;
+}
+</style>
