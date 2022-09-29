@@ -2,6 +2,7 @@
 import MyBio from "./components/MyBio.vue";
 import TwoWayBinding from "./components/TwoWayBindin/TwoWayBinding.vue";
 import ComputedProperties from "./components/ComputedProperties.vue";
+import ComputedExercise from "./components/ComputedExercise.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import ComputedProperties from "./components/ComputedProperties.vue";
   </div>
   <TwoWayBinding /> -->
   <ComputedProperties />
+  <!-- <ComputedExercise /> -->
 </template>
 
 <style scoped></style>
