@@ -17,7 +17,7 @@
       <div id="form-v-model-visbility">
         <pre>{{ JSON.stringify(formValues, null, 1) }}</pre>
       </div>
-      <form @submit.prevent="FUNCION - QUE - NO - EXISTE - TODAVIA">
+      <form @submit.prevent="submitForm">
         <div id="user-input-formName-data-ref">
           <label for="name">Name</label>
           <input
@@ -153,6 +153,7 @@
             type="number"
             id="profile-age"
             v-model.number="formValues.profileAge"
+            @keyup.enter="submitForm"
           />
         </div>
         <button>Submit Form</button>
@@ -175,9 +176,17 @@ const formValues = ref({
   yearsOfExperience: "",
   profileAge: null,
 });
+
+function submitForm() {
+  console.log("Form values:", formValues);
+}
 </script>
 
 <style scoped>
+input {
+  border: 1px solid grey;
+}
+
 pre {
   font-size: 32px;
 }
